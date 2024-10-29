@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -6,7 +6,66 @@
     <link rel="stylesheet" href="style.css" />
     <title>My Portfolio</title>
   </head>
-  <body class="bg bg-yellow-500">
-    <h1 class="text-black">TEST TEST TEST</h1>
+  <body>
+    <div id="navbar-container"></div>
+    <header>
+      <h1 class="text-black">Welcome to my portfolio</h1>
+    </header>
+
+    <main>
+      <section class="m-4 max-w-lg p-6 shadow-md hover:shadow-lg">
+        <h2>Carlos Gomez</h2>
+        <img src="/images/profilfoto.png" alt="Profilfoto" />
+        <p>Hier ist eine kurze Beschreibung über mich.</p>
+      </section>
+
+      <section>
+        <h2>Projekte</h2>
+
+        <div class="flex flex-col items-center md:flex-row md:justify-center">
+          <div class="m-4 max-w-lg shadow-md hover:shadow-lg">
+            <img
+              class="p-6"
+              src="/images/Landingpage_Two4Four.png"
+              alt="Two4Four Landingpage"
+            />
+            <div class="p-6">
+              <h3 class="text-2xl font-bold text-blue-400">Projekt 1</h3>
+              <h2 class="text-2xl font-bold" class="pb-2 pt-2">Two4Four</h2>
+              <p class="text-gray-500">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
+                excepturi quasi repellat amet pariatur!
+              </p>
+            </div>
+          </div>
+
+          <div class="m-4 max-w-lg shadow-md hover:shadow-lg">
+            <img
+              src="/images/Landingpage_Two4Four.png"
+              alt="Two4Four Landingpage"
+            />
+            <div class="p-6">
+              <h3 class="text-2xl font-bold text-blue-400">Projekt 1</h3>
+              <h2 class="text-2xl font-bold" class="pb-2 pt-2">Two4Four</h2>
+              <p class="text-gray-500">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
+                excepturi quasi repellat amet pariatur!
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <h3>Projekt 2</h3>
+          <p>Beschreibung des Projekts 2.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>Kontakt: <a href="mailto:gomec1@bfh.ch">gomec1@bfh.ch</a></p>
+    </footer>
+    <script src="./scripts/script.js"></script>
+    <script src="./scripts/loadnavbar.js"></script>
   </body>
 </html>
