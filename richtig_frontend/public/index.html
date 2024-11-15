@@ -4,23 +4,75 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./src/custom.css">
     <title>My Portfolio</title>
   </head>
   <body>
     <div id="navbar-container"></div>
     <header>
-      <h1 class="text-black">Welcome to my portfolio</h1>
+      <h1 class="flex justify-center self-center py-7 font-serif text-4xl font-light"
+      >
+      Welcome to my portfolio</h1>
     </header>
 
-    <main>
-      <section class="m-4 max-w-lg p-6 shadow-md hover:shadow-lg">
-        <h2>Carlos Gomez</h2>
-        <img src="/images/profilfoto.png" alt="Profilfoto" />
-        <p>Hier ist eine kurze Beschreibung über mich.</p>
+    <main class="custom-bg-color">
+      <!-- Erster Grid-Container -->
+      <section>
+        <div class="flex flex-col items-center md:flex-row md:justify-center">
+          <div class="m-4 max-w-lg shadow-md hover:shadow-lg">
+            <img
+              class="rounded-lg p-6"
+              src="/images/profilfoto.png"
+              alt="Profilfoto"
+            />
+            <div class="p-6">
+              <h2 class="text-2xl font-bold" class="pb-2 pt-2">Carlos Gomez</h2>
+              <p>Hier ist eine kurze Beschreibung über mich.</p>
+            </div>
+          </div>
+        </div>
       </section>
 
-      <section>
-        <h2>Projekte</h2>
+      <section >
+        <h4
+          class="flex justify-center self-center pt-10 font-sans text-4xl font-bold"
+        >
+          Meine Projekte
+        </h4>
+
+        <div class="flex flex-col items-center md:flex-row md:justify-center">
+          <div class="bg-rose-100 m-4 max-w-lg shadow-md hover:shadow-lg">
+            <img
+              class="p-6 rounded-lg" 
+              src="/images/Landingpage_Two4Four.png"
+              alt="Two4Four Landingpage"
+            />
+            <div class="p-6">
+              <h3 class="text-2xl font-bold text-blue-400">Projekt 1</h3>
+              <h2 class="text-2xl font-bold" class="pb-2 pt-2">Two4Four</h2>
+              <p class="text-gray-500">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
+                excepturi quasi repellat amet pariatur!
+              </p>
+            </div>
+          </div>
+
+          <div class="m-4 max-w-lg shadow-md hover:shadow-lg">
+            <img
+              class="p-6"
+              src="/images/Landingpage_Two4Four.png"
+              alt="Two4Four Landingpage"
+            />
+            <div class="p-6">
+              <h3 class="text-2xl font-bold text-blue-400">Projekt 1</h3>
+              <h2 class="text-2xl font-bold" class="pb-2 pt-2">Two4Four</h2>
+              <p class="text-gray-500">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
+                excepturi quasi repellat amet pariatur!
+              </p>
+            </div>
+          </div>
+        </div>
 
         <div class="flex flex-col items-center md:flex-row md:justify-center">
           <div class="m-4 max-w-lg shadow-md hover:shadow-lg">
@@ -41,6 +93,7 @@
 
           <div class="m-4 max-w-lg shadow-md hover:shadow-lg">
             <img
+              class="p-6"
               src="/images/Landingpage_Two4Four.png"
               alt="Two4Four Landingpage"
             />
@@ -53,19 +106,16 @@
               </p>
             </div>
           </div>
-        </div>
-
-        <div>
-          <h3>Projekt 2</h3>
-          <p>Beschreibung des Projekts 2.</p>
-        </div>
       </section>
     </main>
 
     <footer>
       <p>Kontakt: <a href="mailto:gomec1@bfh.ch">gomec1@bfh.ch</a></p>
     </footer>
-    <script src="./scripts/script.js"></script>
     <script src="./scripts/loadnavbar.js"></script>
+    <script src="./scripts/script.js"></script>
+
+    
+    
   </body>
 </html>
