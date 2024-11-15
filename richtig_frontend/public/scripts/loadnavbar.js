@@ -12,6 +12,19 @@ document.addEventListener("DOMContentLoaded", function () {
       .then((data) => {
         navbarContainer.innerHTML = data;
         console.log("Navbar loaded successfully.");
+
+        // Hier kommt der Code zum Hinzufügen des Event-Listeners:
+        const menuButton = document.getElementById("menu-button");
+        const navbarLinks = document.getElementById("navbar-links");
+
+        if (menuButton && navbarLinks) {
+          menuButton.addEventListener("click", function () {
+            console.log("Menu button clicked");
+            navbarLinks.classList.toggle("hidden");
+          });
+        } else {
+          console.warn("Menu button or navbar links not found");
+        }
       })
       .catch((error) => console.error("Error loading navbar:", error));
   } else {
