@@ -5,19 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="/images/favicon/faviconp.ico" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./src/custom.css" />
     <title>projects</title>
   </head>
   <body>
     <div id="navbar-container"></div>
-    <header>
-      <h1 class="text-black">Projects</h1>
+    <header class="custom-bg-color border-b- p-8">
+      <!-- Titel  -->
+      <h1
+        class="text-center font-serif text-4xl font-bold before:left-0 before:top-0 before:h-2 before:w-32 before:rounded before:bg-stone-600 md:text-5xl md:before:left-0 md:before:w-40 dark:before:bg-stone-300"
+      >
+        Projects
+      </h1>
+      <hr class="mx-auto mb-4 mt-4 w-auto border-gray-400 md:mb-2 md:mt-6" />
     </header>
 
-    <main>
+    <main class="custom-bg-color">
       <section>
         <h2>Two4Four</h2>
         <img
-          src="/images/Landingpage_Two4Four.png"
+          src="../images/Landingpage_Two4Four.png"
           alt="Two4Four Landingpage"
         />
         <p>
@@ -27,10 +34,9 @@
       </section>
     </main>
 
-    <footer>
-      <p>Kontakt: <a href="mailto:gomec1@bfh.ch">gomec1@bfh.ch</a></p>
-    </footer>
+    <footer-component></footer-component>
     <script src="./scripts/script.js"></script>
     <script src="./scripts/loadnavbar.js"></script>
+    <script src="./scripts/loadfooter.js"></script>
   </body>
 </html>
