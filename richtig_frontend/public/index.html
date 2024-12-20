@@ -8,27 +8,31 @@
     <link rel="stylesheet" href="./src/custom.css">
     <title>My Portfolio</title>
   </head>
-  <body>
+  <body class="bg-white text-black dark:text-white">
     <div id="navbar-container"></div>
-    <header>
-      <h1 class="text-center md:text-start py-7 font-serif text-4xl font-light md:flex md:justify-center md:self-center"
-      >
-      Portfolio of Carlos Gomez</h1>
+    <header class="custom-bg-color dark:bg-black  border-b-  p-8">
+       <h1
+       class=" text-center font-serif text-4xl font-bold before:left-0 before:top-0 before:h-2 before:w-32 before:rounded before:bg-stone-600 md:text-5xl md:before:left-0 md:before:w-40 dark:before:bg-stone-300"
+     >
+       Portfolio
+     </h1>
+    <hr class="mx-auto mt-6 mb-2 w-auto border-gray-400">
+    <button id="theme-toggle" class="mt-4 p-2 bg-gray-200 dark:bg-gray-700 rounded-xl border-black border-2 dark:border-white">Toggle Dark Mode</button>
     </header>
 
-    <main class="custom-bg-color">
+    <main class="custom-bg-color dark:bg-black">
       <!-- Erster Grid-Container -->
       <section>
-        <div class="flex flex-col items-center md:flex-row md:justify-center">
-          <div class="m-4 max-w-lg shadow-md hover:shadow-lg">
+        <div class="flex flex-col items-center md:flex-row md:justify-center md:items-center">
+          <div class="bg-gray-200 dark:bg-blue-950 m-4 max-w-lg shadow-md hover:shadow-2xl rounded-3xl md:flex md:max-w-4xl">
             <img
-              class="rounded-lg p-6"
-              src="/images/profilfoto.png"
+              class="rounded-full pb-2 pt-6 px-6 md:p-6 md:w-1/2 md:object-contain"
+              src="../images/profilfoto.png"
               alt="Profilfoto"
             />
-            <div class="p-6">
-              <h2 class="text-2xl font-bold" class="pb-2 pt-2">Carlos Gomez</h2>
-              <p>Hier ist eine kurze Beschreibung über mich.</p>
+            <div class="pb-6 pt-2 px-6 md:p-6 md:w-1/2 md:text-left text-center text-black dark:text-white">
+              <h2 class="text-2xl font-bold pb-2 pt-2">Carlos Gomez</h2>
+              <p>Hier ist eine kurze Beschreibung über mich. Hier ist eine kurze Beschreibung über mich Hier ist eine kurze Beschreibung über mich Hier ist eine kurze Beschreibung über mich</p>
             </div>
           </div>
         </div>
@@ -42,80 +46,104 @@
         </h4>
 
         <div class="flex flex-col items-center md:flex-row md:justify-center">
-          <div class="bg-rose-100 m-4 max-w-lg shadow-md hover:shadow-lg">
+          <div class="rounded-3xl dark:bg-blue-950 bg-rose-50 m-4 max-w-lg shadow-md hover:shadow-xl md:flex md:max-w-7xl">
             <img
-              class="p-6 rounded-lg" 
-              src="/images/Landingpage_Two4Four.png"
+              class="p-4 rounded-lg md:w-1/3" 
+              src="../images/Landingpage_Two4Four.png"
               alt="Two4Four Landingpage"
             />
-            <div class="p-6">
+            <div class="p-4 md:flex md:flex-col md:justify-center md:w-2/3 md:text-left text-center">
               <h3 class="text-2xl font-bold text-blue-400">Projekt 1</h3>
-              <h2 class="text-2xl font-bold" class="pb-2 pt-2">Two4Four</h2>
-              <p class="text-gray-500">
+              <h2 class="text-2xl font-bold pb-2 pt-2">Two4Four</h2>
+              <p class="text-black dark:text-white">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
+                excepturi quasi repellat amet pariatur! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
+                excepturi quasi repellat amet pariatur! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
                 excepturi quasi repellat amet pariatur!
               </p>
-            </div>
-          </div>
-
-          <div class="m-4 max-w-lg shadow-md hover:shadow-lg">
-            <img
-              class="p-6"
-              src="/images/Landingpage_Two4Four.png"
-              alt="Two4Four Landingpage"
-            />
-            <div class="p-6">
-              <h3 class="text-2xl font-bold text-blue-400">Projekt 1</h3>
-              <h2 class="text-2xl font-bold" class="pb-2 pt-2">Two4Four</h2>
-              <p class="text-gray-500">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
-                excepturi quasi repellat amet pariatur!
-              </p>
+              <button class="mt-4 w-32 h-10 md:w-48 justify-center bg-white border rounded-xl border-black text-xs dark:bg-blue-950 dark:border-white">Mehr Erfahren</button>
             </div>
           </div>
         </div>
 
+<div class="flex flex-col items-center md:flex-row md:justify-center">
+  <div class="bg-rose-50 dark:bg-blue-950 rounded-3xl m-4 max-w-lg shadow-md hover:shadow-xl md:flex md:max-w-7xl">
+    <img
+      class="p-4 rounded-lg md:w-1/3" 
+      src="../images/Landingpage_Two4Four.png"
+      alt="Two4Four Landingpage"
+    />
+    <div class="p-4 sm:flex sm:flex-col sm:justify-center sm:w-2/3 sm:text-left text-center">
+      <h3 class="text-2xl font-bold text-blue-400">Projekt 1</h3>
+      <h2 class="text-2xl font-bold pb-2 pt-2">Two4Four</h2>
+      <p class="text-black dark:text-white">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
+        excepturi quasi repellat amet pariatur! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
+        excepturi quasi repellat amet pariatur! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
+        excepturi quasi repellat amet pariatur!
+      </p>
+      <button class="mt-4 w-32 h-10 md:w-48 justify-center bg-white border rounded-xl border-black text-xs dark:bg-blue-950 dark:border-white">Mehr Erfahren</button>
+    </div>
+  </div>
+</div>
+   <h4
+class="flex justify-center self-center pt-10 font-sans text-4xl font-bold"
+>
+Meine Erfahrung
+</h4>
+          
+
         <div class="flex flex-col items-center md:flex-row md:justify-center">
-          <div class="m-4 max-w-lg shadow-md hover:shadow-lg">
+          <div class="dark:bg-blue-950 m-4 rounded-3xl max-w-lg shadow-md hover:shadow-xl">
             <img
               class="p-6"
-              src="/images/Landingpage_Two4Four.png"
+              src="../images/Landingpage_Two4Four.png"
               alt="Two4Four Landingpage"
             />
             <div class="p-6">
-              <h3 class="text-2xl font-bold text-blue-400">Projekt 1</h3>
-              <h2 class="text-2xl font-bold" class="pb-2 pt-2">Two4Four</h2>
-              <p class="text-gray-500">
+              <h3 class="text-black text-2xl font-bold dark:text-blue-400">Projekt 1</h3>
+              <h2 class="text-black dark:text-white text-2xl font-bold" class="pb-2 pt-2">Two4Four</h2>
+              <p class="text-black dark:text-white">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
                 excepturi quasi repellat amet pariatur!
               </p>
             </div>
           </div>
 
-          <div class="m-4 max-w-lg shadow-md hover:shadow-lg">
+          <div class="dark:bg-blue-950 m-4 rounded-3xl max-w-lg shadow-md hover:shadow-xl">
             <img
               class="p-6"
-              src="/images/Landingpage_Two4Four.png"
+              src="../images/Landingpage_Two4Four.png"
               alt="Two4Four Landingpage"
             />
-            <div class="p-6">
-              <h3 class="text-2xl font-bold text-blue-400">Projekt 1</h3>
-              <h2 class="text-2xl font-bold" class="pb-2 pt-2">Two4Four</h2>
-              <p class="text-gray-500">
+            <div class="p-6 ">
+              <h3 class="text-black text-2xl font-bold dark:text-blue-400">Projekt 1</h3>
+              <h2 class="dark:text-white text-2xl font-bold" class="pb-2 pt-2">Two4Four</h2>
+              <p class="dark:text-white text-black">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
                 excepturi quasi repellat amet pariatur!
               </p>
             </div>
           </div>
       </section>
+      <section>
+      
+
+
+
+
+
+      </section>
     </main>
 
-    <footer>
-      <p>Kontakt: <a href="mailto:gomec1@bfh.ch">gomec1@bfh.ch</a></p>
-    </footer>
+    <footer-component></footer-component>
+
+
+    <script src="./scripts/darkmodus.js"></script> 
+    <script src="./scripts/loadfooter.js"></script> 
     <script src="./scripts/loadnavbar.js"></script>
     <script src="./scripts/script.js"></script>
-
+    
     
     
   </body>
