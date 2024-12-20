@@ -4,9 +4,6 @@ node_modules/
 # Tailwind CSS output
 public/css/tailwind.css
 
-# Tailwind CSS config file
-tailwind.config.js
-
 # Build output
 dist/
 build/
