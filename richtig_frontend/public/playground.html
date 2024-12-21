@@ -5,16 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="/images/favicon/faviconpl.ico" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./src/custom.css" />
     <title>Playground</title>
   </head>
   <body>
     <div id="navbar-container"></div>
-    <main>
+    <header class="custom-bg-color border-b- p-8">
+      <!-- Titel  -->
+      <h1
+        class="text-center font-serif text-4xl font-bold before:left-0 before:top-0 before:h-2 before:w-32 before:rounded before:bg-stone-600 md:text-5xl md:before:left-0 md:before:w-40 dark:before:bg-stone-300"
+      >
+        Playground
+      </h1>
+      <hr class="mx-auto mb-4 mt-4 w-auto border-gray-400 md:mb-2 md:mt-6" />
+    </header>
+    <main class="custom-bg-color">
       <h1>Playground</h1>
       <h1>Donald Trump Quotes</h1>
       <div id="quotes">Lade Zitate...</div>
+
+      <div class="py-6 flex flex-row items-center md:flex-row md:justify-center md:items-center">
+  
+        <a id="get-location" href="#">
+          <img
+            src="../images/Jorden.globe.gif"
+            width="49"
+            height="52"
+            border="0"
+            alt="Globe Icon"
+          />
+        </a>
+        <div
+          class="hidden mt-6 md:w-full h-96"
+          id="map"
+        ></div>
     </main>
+    <footer-component></footer-component>
+    <script src="./scripts/showyourposition.js"></script>
     <script src="./scripts/script.js"></script>
     <script src="./scripts/loadnavbar.js"></script>
+    <script src="./scripts/loadfooter.js"></script>
   </body>
 </html>
