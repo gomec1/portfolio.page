@@ -8,24 +8,55 @@
     <link rel="stylesheet" href="src/custom.css" />
     <title>Curriculum Vitae</title>
   </head>
-  <body>
+  <body class="bg-white text-black dark:text-white">
     <div id="navbar-container"></div>
-    <header class="custom-bg-color border-b- p-8">
+    <header class="custom-bg-color custom-bg-color border-b- p-8 dark:bg-black">
       <!-- Titel  -->
       <h1
-        class="text-center font-serif text-4xl font-bold before:left-0 before:top-0 before:h-2 before:w-32 before:rounded before:bg-stone-600 md:text-5xl md:before:left-0 md:before:w-40 dark:before:bg-stone-300"
+        class="text-center font-serif text-4xl font-bold before:left-0 before:top-0 before:h-2 before:w-32 before:rounded before:bg-stone-600 dark:before:bg-stone-300 md:text-5xl md:before:left-0 md:before:w-40"
       >
         Lebenslauf
       </h1>
-      <hr class="mx-auto mb-4 mt-4 md:mb-2 md:mt-6 w-auto border-gray-400" />
-     
+      <hr class="mx-auto mb-4 mt-4 w-auto border-gray-400 md:mb-2 md:mt-6" />
+
+      <div class="mt-4 flex justify-center">
+        <a
+          href="../images/Lebenslauf_Carlos_Gomez.pdf"
+          download
+          class="hover: inline-flex rounded-lg bg-slate-50 px-5 py-2.5 text-center text-sm font-medium text-black hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:bg-blue-950 dark:text-white dark:hover:bg-blue-500 dark:focus:ring-gray-100"
+        >
+          <svg
+            class="-ml-1 mr-2 h-5 w-5"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M8 9a3 3 0 116 0v3a3 3 0 11-6 0V9zM5 8a5 5 0 1110 0v3a5 5 0 11-10 0V8z"
+            />
+            <path
+              d="M4 12a1 1 0 011-1h10a1 1 0 011 1v4a1 1 0 01-1 1H5a1 1 0 01-1-1v-4z"
+            />
+          </svg>
+          Herunterladen
+        </a>
+      </div>
+
+      <button
+        id="theme-toggle"
+        class="fixed bottom-2 right-1 mt-4 rounded-xl border-2 border-black bg-slate-50 p-2 dark:border-white dark:bg-gray-900"
+      >
+        Dark 🌙
+      </button>
     </header>
 
-    <main class="custom-bg-color">
+    <main
+      class="custom-bg-color min-h-screen text-black dark:bg-black dark:text-white"
+    >
       <!-- Praktische Erfahrung -->
       <section class="px-6 pb-4 pt-0 md:pt-2.5">
         <div class="text-center text-stone-950 dark:text-stone-50">
-          <p class="mb-8 mt-0 text-black">
+          <p class="mb-8 mt-0 text-black dark:text-white">
             Hier ist eine Übersicht meiner Praktischen Erfahrungen in der
             Arbeitswelt. Angefangen in einer Kaufmännischen Lehre bei Login AG,
             über eine zusatzausbildung als Kundenberater bei SBB AG, bis hin zu
@@ -82,12 +113,21 @@
               <ul class="mt-2">
                 <!-- Aufzählung  -->
                 <li class="flex items-center gap-2">
-                  <img
-                    src="../images/done_icon.svg"
+                  <svg
+                    stroke="currentColor"
+                    fill="none"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
                     class="size-5 shrink-0 text-stone-700 dark:text-stone-300"
                     height="1em"
                     width="1em"
-                  />
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                  </svg>
                   <p>
                     Koordination des täglichen Geschäftsbetriebs in allen
                     Bereichen
@@ -95,44 +135,84 @@
                 </li>
                 <!-- Aufzählung  -->
                 <li class="flex items-center gap-2">
-                  <img
-                    src="../images/done_icon.svg"
+                  <svg
+                    stroke="currentColor"
+                    fill="none"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
                     class="size-5 shrink-0 text-stone-700 dark:text-stone-300"
                     height="1em"
                     width="1em"
-                  />
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                  </svg>
+
                   <p>Verantwortung für den reibungslosen Tagesablauf</p>
                 </li>
                 <!-- Aufzählung  -->
                 <li class="flex items-center gap-2">
-                  <img
-                    src="../images/done_icon.svg"
+                  <svg
+                    stroke="currentColor"
+                    fill="none"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
                     class="size-5 shrink-0 text-stone-700 dark:text-stone-300"
                     height="1em"
                     width="1em"
-                  />
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                  </svg>
+
                   <p>
                     Bearbeitung interner Anliegen und komplexer Kundenanfragen
                   </p>
                 </li>
                 <!-- Aufzählung  -->
                 <li class="flex items-center gap-2">
-                  <img
-                    src="../images/done_icon.svg"
+                  <svg
+                    stroke="currentColor"
+                    fill="none"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
                     class="size-5 shrink-0 text-stone-700 dark:text-stone-300"
                     height="1em"
                     width="1em"
-                  />
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                  </svg>
+
                   <p>Management von kurzfristigen Dienstausfällen</p>
                 </li>
                 <!-- Aufzählung  -->
                 <li class="flex items-center gap-2">
-                  <img
-                    src="../images/done_icon.svg"
+                  <svg
+                    stroke="currentColor"
+                    fill="none"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
                     class="size-5 shrink-0 text-stone-700 dark:text-stone-300"
                     height="1em"
                     width="1em"
-                  />
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                  </svg>
+
                   <p>
                     Hauptansprechpartner für Kolleginnen und Kollegen bei
                     fachlichen Problemen, zu Verkaufssystemen, sowie
@@ -189,12 +269,22 @@
               <ul class="mt-2">
                 <!-- Aufzählung  -->
                 <li class="flex items-center gap-2">
-                  <img
-                    src="../images/done_icon.svg"
+                  <svg
+                    stroke="currentColor"
+                    fill="none"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
                     class="size-5 shrink-0 text-stone-700 dark:text-stone-300"
                     height="1em"
                     width="1em"
-                  />
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                  </svg>
+
                   <p>
                     Aufgaben entsprechen denen der Position in Grenchen
                     Süd/Solothurn
@@ -249,12 +339,22 @@
               <!-- Aufzählung  -->
               <ul class="mt-2">
                 <li class="flex items-center gap-2">
-                  <img
-                    src="../images/done_icon.svg"
+                  <svg
+                    stroke="currentColor"
+                    fill="none"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
                     class="size-5 shrink-0 text-stone-700 dark:text-stone-300"
                     height="1em"
                     width="1em"
-                  />
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                  </svg>
+
                   <p>Abschluss der Rekrutenschule</p>
                 </li>
               </ul>
@@ -309,22 +409,42 @@
               <ul class="mt-2">
                 <!-- Aufzählung  -->
                 <li class="flex items-center gap-2">
-                  <img
-                    src="../images/done_icon.svg"
+                  <svg
+                    stroke="currentColor"
+                    fill="none"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
                     class="size-5 shrink-0 text-stone-700 dark:text-stone-300"
                     height="1em"
                     width="1em"
-                  />
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                  </svg>
+
                   <p>Persönliche Beratung der Kundinnen und Kunden</p>
                 </li>
                 <!-- Aufzählung  -->
                 <li class="flex items-center gap-2">
-                  <img
-                    src="../images/done_icon.svg"
+                  <svg
+                    stroke="currentColor"
+                    fill="none"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
                     class="size-5 shrink-0 text-stone-700 dark:text-stone-300"
                     height="1em"
                     width="1em"
-                  />
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                  </svg>
+
                   <p>
                     Abschlussorientiertes und aktives Verkaufen der Haupt- sowie
                     Drittgeschäfte
@@ -332,12 +452,22 @@
                 </li>
                 <!-- Aufzählung  -->
                 <li class="flex items-center gap-2">
-                  <img
-                    src="../images/done_icon.svg"
+                  <svg
+                    stroke="currentColor"
+                    fill="none"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
                     class="size-5 shrink-0 text-stone-700 dark:text-stone-300"
                     height="1em"
                     width="1em"
-                  />
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                  </svg>
+
                   <p>
                     Aktives Lenken und Unterstützung der Kundinnen und Kunden
                     auf die digitalen Verkaufskanäle
@@ -345,24 +475,44 @@
                 </li>
                 <!-- Aufzählung  -->
                 <li class="flex items-center gap-2">
-                  <img
-                    src="../images/done_icon.svg"
+                  <svg
+                    stroke="currentColor"
+                    fill="none"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
                     class="size-5 shrink-0 text-stone-700 dark:text-stone-300"
                     height="1em"
                     width="1em"
-                  />
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                  </svg>
+
                   <p>
                     Sicherstelleung eines professionellen Service aprés-vente
                   </p>
                 </li>
                 <!-- Aufzählung  -->
                 <li class="flex items-center gap-2">
-                  <img
-                    src="../images/done_icon.svg"
+                  <svg
+                    stroke="currentColor"
+                    fill="none"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
                     class="size-5 shrink-0 text-stone-700 dark:text-stone-300"
                     height="1em"
                     width="1em"
-                  />
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                  </svg>
+
                   <p>Betruung der Kundschaft im Störungsfall</p>
                 </li>
               </ul>
@@ -417,12 +567,22 @@
               <ul class="mt-2">
                 <!-- Aufzählung  -->
                 <li class="flex items-center gap-2">
-                  <img
-                    src="../images/done_icon.svg"
+                  <svg
+                    stroke="currentColor"
+                    fill="none"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
                     class="size-5 shrink-0 text-stone-700 dark:text-stone-300"
                     height="1em"
                     width="1em"
-                  />
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                  </svg>
+
                   <p>
                     Selbständiges Arbeiten in verschiedenen Junior Business
                     Teams.
@@ -430,32 +590,62 @@
                 </li>
                 <!-- Aufzählung  -->
                 <li class="flex items-center gap-2">
-                  <img
-                    src="../images/done_icon.svg"
+                  <svg
+                    stroke="currentColor"
+                    fill="none"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
                     class="size-5 shrink-0 text-stone-700 dark:text-stone-300"
                     height="1em"
                     width="1em"
-                  />
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                  </svg>
+
                   <p>Diverse Administrative Aufgaben</p>
                 </li>
                 <!-- Aufzählung  -->
                 <li class="flex items-center gap-2">
-                  <img
-                    src="../images/done_icon.svg"
+                  <svg
+                    stroke="currentColor"
+                    fill="none"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
                     class="size-5 shrink-0 text-stone-700 dark:text-stone-300"
                     height="1em"
                     width="1em"
-                  />
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                  </svg>
+
                   <p>Betreuung interner sowie externer Kunden</p>
                 </li>
                 <!-- Aufzählung  -->
                 <li class="flex items-center gap-2">
-                  <img
-                    src="../images/done_icon.svg"
+                  <svg
+                    stroke="currentColor"
+                    fill="none"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
                     class="size-5 shrink-0 text-stone-700 dark:text-stone-300"
                     height="1em"
                     width="1em"
-                  />
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                  </svg>
+
                   <p>
                     Erfahrung in Human Resources z.B. Organisation interner
                     Weiterbildungskurse
@@ -463,12 +653,22 @@
                 </li>
                 <!-- Aufzählung  -->
                 <li class="flex items-center gap-2">
-                  <img
-                    src="../images/done_icon.svg"
+                  <svg
+                    stroke="currentColor"
+                    fill="none"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
                     class="size-5 shrink-0 text-stone-700 dark:text-stone-300"
                     height="1em"
                     width="1em"
-                  />
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                  </svg>
+
                   <p>
                     Beraten und verkaufen der richtigen Angebote für Reisen in
                     der Schweiz und in Europa
@@ -476,12 +676,22 @@
                 </li>
                 <!-- Aufzählung  -->
                 <li class="flex items-center gap-2">
-                  <img
-                    src="../images/done_icon.svg"
+                  <svg
+                    stroke="currentColor"
+                    fill="none"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
                     class="size-5 shrink-0 text-stone-700 dark:text-stone-300"
                     height="1em"
                     width="1em"
-                  />
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                  </svg>
+
                   <p>Kundenbetreuung im Störungsfall</p>
                 </li>
               </ul>
@@ -493,14 +703,14 @@
       <!--  Ausbildung -->
       <section class="px-6 pb-4 pt-8 md:pt-2.5">
         <h1
-        class="text-center font-serif text-4xl font-bold before:left-0 before:top-0 before:h-2 before:w-32 before:rounded before:bg-stone-600 md:text-5xl md:before:left-0 md:before:w-40 dark:before:bg-stone-300"
-      >
-        Ausbildung
-      </h1>
-      <hr class="mx-auto mb-2 mt-6 w-auto border-gray-400" />
+          class="text-center font-serif text-4xl font-bold before:left-0 before:top-0 before:h-2 before:w-32 before:rounded before:bg-stone-600 dark:before:bg-stone-300 md:text-5xl md:before:left-0 md:before:w-40"
+        >
+          Ausbildung
         </h1>
+        <hr class="mx-auto mb-2 mt-6 w-auto border-gray-400" />
+
         <div class="text-center text-stone-950 dark:text-stone-50">
-          <p class="my-8 text-black">
+          <p class="my-8 text-black dark:text-white">
             Mein Weg begann mit einer Kaufmännischen Lehre bei Login AG. Danach
             absolvierte ich zwei Jahre lang die Berufsmaturitätsschule in Bern.
             Anschliessend folgte das Studium an der Fachhochschule, als BSc. in
@@ -534,9 +744,11 @@
 
             <div class="flex grow flex-col pb-5">
               <div class="flex justify-between">
-                <h2 class="text-lg font-bold text-black">Student</h2>
+                <h2 class="text-lg font-bold text-black dark:text-white">
+                  Student
+                </h2>
                 <div
-                  class="ml-2 inline-flex items-center rounded-md border border-stone-500 px-2.5 py-0.5 text-xs font-semibold text-black"
+                  class="ml-2 inline-flex items-center rounded-md border border-stone-500 px-2.5 py-0.5 text-xs font-semibold text-black dark:text-white"
                 >
                   BSc
                 </div>
@@ -557,12 +769,22 @@
               <ul class="mt-2">
                 <!-- Aufzählung  -->
                 <li class="flex items-center gap-2">
-                  <img
-                    src="../images/done_icon.svg"
+                  <svg
+                    stroke="currentColor"
+                    fill="none"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
                     class="size-5 shrink-0 text-stone-700 dark:text-stone-300"
                     height="1em"
                     width="1em"
-                  />
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                  </svg>
+
                   <p>
                     Bachelor of Science in Wirtschaftsinformatik / Digital
                     Business & AI
@@ -597,9 +819,11 @@
 
             <div class="flex grow flex-col pb-5">
               <div class="flex justify-between">
-                <h2 class="text-lg font-bold text-black">Berufsmaturität</h2>
+                <h2 class="text-lg font-bold text-black dark:text-white">
+                  Berufsmaturität
+                </h2>
                 <div
-                  class="ml-2 inline-flex items-center rounded-md border border-stone-500 px-2.5 py-0.5 text-xs font-semibold text-black"
+                  class="ml-2 inline-flex items-center rounded-md border border-stone-500 px-2.5 py-0.5 text-xs font-semibold text-black dark:text-white"
                 >
                   BM
                 </div>
@@ -620,22 +844,42 @@
               <ul class="mt-2">
                 <!-- Aufzählung  -->
                 <li class="flex items-center gap-2">
-                  <img
-                    src="../images/done_icon.svg"
+                  <svg
+                    stroke="currentColor"
+                    fill="none"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
                     class="size-5 shrink-0 text-stone-700 dark:text-stone-300"
                     height="1em"
                     width="1em"
-                  />
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                  </svg>
+
                   <p>Typ Wirtschaft und Dienstleistung</p>
                 </li>
                 <!-- Aufzählung  -->
                 <li class="flex items-center gap-2">
-                  <img
-                    src="../images/done_icon.svg"
+                  <svg
+                    stroke="currentColor"
+                    fill="none"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
                     class="size-5 shrink-0 text-stone-700 dark:text-stone-300"
                     height="1em"
                     width="1em"
-                  />
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                  </svg>
+
                   <p>
                     Abschlussarbeit: Veränderung der Generationen Y und Z in der
                     Schweiz
@@ -670,9 +914,11 @@
 
             <div class="flex grow flex-col pb-5">
               <div class="flex justify-between">
-                <h2 class="text-lg font-bold text-black">Kaufm. Ausbildung</h2>
+                <h2 class="text-lg font-bold text-black dark:text-white">
+                  Kaufm. Ausbildung
+                </h2>
                 <div
-                  class="ml-2 inline-flex items-center rounded-md border border-stone-500 px-2.5 py-0.5 text-xs font-semibold text-black"
+                  class="ml-2 inline-flex items-center rounded-md border border-stone-500 px-2.5 py-0.5 text-xs font-semibold text-black dark:text-white"
                 >
                   Lehre
                 </div>
@@ -693,24 +939,44 @@
               <ul class="mt-2">
                 <!-- Aufzählung  -->
                 <li class="flex items-center gap-2">
-                  <img
-                    src="../images/done_icon.svg"
+                  <svg
+                    stroke="currentColor"
+                    fill="none"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
                     class="size-5 shrink-0 text-stone-700 dark:text-stone-300"
                     height="1em"
                     width="1em"
-                  />
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                  </svg>
+
                   <p>
                     Kaufmännische Berufsausbildung EFZ im Öffentlichen Verkehr
                   </p>
                 </li>
                 <!-- Aufzählung  -->
                 <li class="flex items-center gap-2">
-                  <img
-                    src="../images/done_icon.svg"
+                  <svg
+                    stroke="currentColor"
+                    fill="none"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
                     class="size-5 shrink-0 text-stone-700 dark:text-stone-300"
                     height="1em"
                     width="1em"
-                  />
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                  </svg>
+
                   <p>Drittes Lehrjahr: Schwerpunktjahr als Kundenberater</p>
                 </li>
               </ul>
@@ -718,11 +984,53 @@
           </div>
         </div>
       </section>
+
+      <section class="px-6 pb-4 pt-8 text-center md:pt-2.5">
+        <h1
+          class="text-center font-serif text-4xl font-bold before:left-0 before:top-0 before:h-2 before:w-32 before:rounded before:bg-stone-600 dark:before:bg-stone-300 md:text-5xl md:before:left-0 md:before:w-40"
+        >
+          Zertifikate
+        </h1>
+        <hr class="mx-auto mb-2 mt-6 w-auto border-gray-400" />
+        <div class="mx-auto w-full md:max-w-2xl">
+          <div
+            class="mx-1 text-center text-stone-950 dark:text-stone-50 md:mx-6"
+          >
+            <p class="my-8 text-left text-black dark:text-white">
+              <strong
+                >Certified Professional for Requirements Engineering</strong
+              ><br />
+              <em>Institution:</em> International Requirements Engineering Board
+              (IREB)<br />
+              <em>Erwerbsdatum:</em> Februar 2024<br />
+              <em>Inhalte:</em> Anforderungsanalyse, Dokumentation, Validierung
+              und Management von Anforderungen<br /><br />
+
+              <strong>Business English Certificate B2 Vantage</strong><br />
+              <em>Institution:</em> Cambridge University Press & Assessment
+              English<br />
+              <em>Erwerbsdatum:</em> März 2021<br />
+              <em>Inhalte:</em> Geschäftskommunikation, Verhandlungstechniken,
+              Präsentationsfähigkeiten, schriftliche und mündliche
+              Geschäftsenglischkenntnisse<br /><br />
+
+              <strong>Diplôme de français professionnel Affaires B2</strong
+              ><br />
+              <em>Institution:</em> Le français des affaires de la CCI Paris
+              Ile-de-France<br />
+              <em>Erwerbsdatum:</em> März 2021<br />
+              <em>Inhalte:</em> Professionelle französische Kommunikation,
+              Geschäftskorrespondenz, Verhandlung auf Französisch, berufliche
+              Interaktion im französischen Sprachraum
+            </p>
+          </div>
+        </div>
+      </section>
     </main>
     <footer-component></footer-component>
-    
+    <script src="./scripts/darkmodus.js"></script>
     <script src="./scripts/script.js"></script>
     <script src="./scripts/loadnavbar.js"></script>
-    <script src="./scripts/loadfooter.js"></script> 
+    <script src="./scripts/loadfooter.js"></script>
   </body>
 </html>
