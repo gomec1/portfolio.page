@@ -3,36 +3,44 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="/images/favicon/faviconhome.ico" />
+    <link rel="icon" href="../images/favicon/faviconhome.ico" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="./src/custom.css">
     <title>My Portfolio</title>
   </head>
   <body class="bg-white text-black dark:text-white">
     <div id="navbar-container"></div>
-    <header class="custom-bg-color dark:bg-black  border-b-  p-8">
+    <header class="custom-bg-color dark:bg-black   p-8">
        <h1
        class=" text-center font-serif text-4xl font-bold before:left-0 before:top-0 before:h-2 before:w-32 before:rounded before:bg-stone-600 md:text-5xl md:before:left-0 md:before:w-40 dark:before:bg-stone-300"
      >
        Portfolio
      </h1>
     <hr class="mx-auto mt-6 mb-2 w-auto border-gray-400">
-    <button id="theme-toggle" class="mt-4 p-2 bg-gray-200 dark:bg-gray-700 rounded-xl border-black border-2 dark:border-white">Toggle Dark Mode</button>
-    </header>
+<!-- Darkmode Button -->
+<button id="theme-toggle" class="fixed bottom-2 right-1 mt-4 p-2 bg-slate-50 dark:bg-gray-900 rounded-xl border-black border-2 dark:border-white">Dark 🌙</button>
+</header>
 
     <main class="custom-bg-color dark:bg-black">
       <!-- Erster Grid-Container -->
+          <!-- über mich -->
       <section>
         <div class="flex flex-col items-center md:flex-row md:justify-center md:items-center">
-          <div class="bg-gray-200 dark:bg-blue-950 m-4 max-w-lg shadow-md hover:shadow-2xl rounded-3xl md:flex md:max-w-4xl">
+          <div class="bg-slate-50 dark:bg-blue-950 m-4 max-w-lg shadow-md rounded-3xl md:flex md:max-w-6xl">
             <img
-              class="rounded-full pb-2 pt-6 px-6 md:p-6 md:w-1/2 md:object-contain"
+              class="rounded-full pb-2 pt-6 px-6 md:p-6 md:w-1/3 md:object-contain self-center"
               src="../images/profilfoto.png"
               alt="Profilfoto"
             />
-            <div class="pb-6 pt-2 px-6 md:p-6 md:w-1/2 md:text-left text-center text-black dark:text-white">
+            <div class="pb-6 pt-2 px-6 md:p-6 md:w-2/3 md:text-left text-center text-black dark:text-white flex flex-col justify-center">
               <h2 class="text-2xl font-bold pb-2 pt-2">Carlos Gomez</h2>
-              <p>Hier ist eine kurze Beschreibung über mich. Hier ist eine kurze Beschreibung über mich Hier ist eine kurze Beschreibung über mich Hier ist eine kurze Beschreibung über mich</p>
+              <p class="text-left"><strong>Willkommen auf meiner Portfolio-Seite!</strong><br> Diese habe ich im Rahmen des Web-Engineering-Moduls meines Wirtschaftsinformatik-Studiums entwickelt. Dabei habe ich bewusst darauf verzichtet, Frameworks zu verwenden, und stattdessen alles mit reinem HTML, CSS und JavaScript programmiert. Ich bin mir bewusst, dass dies in der Praxis oft anders gehandhabt wird, aber ich wollte die Herausforderung annehmen und mich selbst ins kalte Wasser werfen. Zusätzlich habe ich zum ersten Mal mit Tailwind CSS gearbeitet – nach einer kurzen Einarbeitungszeit stellte sich das Framework als äusserst praktisch heraus.
+              <br>
+              <br>
+          <strong>Ein paar Worte zu mir:</strong><br>
+          Ich bin eine aufgeschlossene und kommunikative Person, die gerne neue Menschen kennenlernt. Mein Lebensmotto lautet: Leben und leben lassen. Behandelst du mich mit Respekt, kannst du das Gleiche von mir erwarten. Ich glaube fest an die Kraft der Schwarmintelligenz und bin überzeugt, dass man im Team gemeinsam mehr erreichen kann.
+          
+          Meine Interessen reichen von Politik, Technik und Programmierung über Finanzen bis hin zur Musik.</p>
             </div>
           </div>
         </div>
@@ -44,96 +52,331 @@
         >
           Meine Projekte
         </h4>
-
+ <!-- Two4Four -->
         <div class="flex flex-col items-center md:flex-row md:justify-center">
-          <div class="rounded-3xl dark:bg-blue-950 bg-rose-50 m-4 max-w-lg shadow-md hover:shadow-xl md:flex md:max-w-7xl">
+          <div class="rounded-3xl dark:bg-blue-950 bg-slate-50 m-4 max-w-lg shadow-md md:flex md:max-w-7xl">
             <img
               class="p-4 rounded-lg md:w-1/3" 
               src="../images/Landingpage_Two4Four.png"
               alt="Two4Four Landingpage"
             />
             <div class="p-4 md:flex md:flex-col md:justify-center md:w-2/3 md:text-left text-center">
-              <h3 class="text-2xl font-bold text-blue-400">Projekt 1</h3>
-              <h2 class="text-2xl font-bold pb-2 pt-2">Two4Four</h2>
-              <p class="text-black dark:text-white">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
-                excepturi quasi repellat amet pariatur! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
-                excepturi quasi repellat amet pariatur! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
-                excepturi quasi repellat amet pariatur!
+              <h3 class="text-2xl font-bold text-black dark:text-blue-400">Projekt 1</h3>
+              <h2 class="text-1xl font-bold pb-2 pt-2">Two4Four</h2>
+              <p class="text-black dark:text-white text-left">
+                Im Modul Software Engineering war es unsere Aufgabe, eine Inseratsseite zu entwickeln. Als Frontend-Framework kam Angular zum Einsatz, während das Backend mit Strapi realisiert wurde. Angular basiert auf TypeScript und verwendet HTML/CSS, wodurch wir eine robuste und moderne Webanwendung erstellen konnten.
               </p>
-              <button class="mt-4 w-32 h-10 md:w-48 justify-center bg-white border rounded-xl border-black text-xs dark:bg-blue-950 dark:border-white">Mehr Erfahren</button>
+             
+                <a href="/richtig_frontend/public/projects.html" class="mt-4 w-32 h-10 md:w-48 flex justify-center items-center bg-white border rounded-xl hover:bg-gray-100 dark:hover:bg-blue-500 border-black text-xs dark:bg-blue-950 dark:border-white">Mehr Erfahren</a>
             </div>
           </div>
         </div>
-
+ <!-- Portfolio -->
 <div class="flex flex-col items-center md:flex-row md:justify-center">
-  <div class="bg-rose-50 dark:bg-blue-950 rounded-3xl m-4 max-w-lg shadow-md hover:shadow-xl md:flex md:max-w-7xl">
+  <div class="bg-slate-50 dark:bg-blue-950 rounded-3xl m-4 max-w-lg shadow-md md:flex md:max-w-7xl">
     <img
       class="p-4 rounded-lg md:w-1/3" 
-      src="../images/Landingpage_Two4Four.png"
+      src="../images/Landingpage_Portfolio.png"
       alt="Two4Four Landingpage"
     />
     <div class="p-4 sm:flex sm:flex-col sm:justify-center sm:w-2/3 sm:text-left text-center">
-      <h3 class="text-2xl font-bold text-blue-400">Projekt 1</h3>
-      <h2 class="text-2xl font-bold pb-2 pt-2">Two4Four</h2>
-      <p class="text-black dark:text-white">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
-        excepturi quasi repellat amet pariatur! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
-        excepturi quasi repellat amet pariatur! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
-        excepturi quasi repellat amet pariatur!
+      <h3 class="text-2xl font-bold text-black dark:text-blue-400">Projekt 2</h3>
+      <h2 class="text-1xl font-bold pb-2 pt-2">Portfolio Carlos Gomez</h2>
+      <p class="text-black dark:text-white text-left">
+        Im Modul Web Engineering bestand meine Semesterarbeit darin, diese Portfolio-Seite zu programmieren. Es gab keine festen Vorgaben hinsichtlich der verwendeten Technologien oder des Designs. Ich habe mich entschieden, pures HTML, Tailwind CSS und JavaScript zu verwenden, ohne ein zusätzliches Frontend-Framework einzusetzen, um maximale Flexibilität und Kontrolle über das Ergebnis zu haben.
       </p>
-      <button class="mt-4 w-32 h-10 md:w-48 justify-center bg-white border rounded-xl border-black text-xs dark:bg-blue-950 dark:border-white">Mehr Erfahren</button>
+      <a href="/richtig_frontend/public/projects.html" class="mt-4 w-32 h-10 md:w-48 flex justify-center items-center bg-white border rounded-xl hover:bg-gray-100 dark:hover:bg-blue-500 border-black text-xs dark:bg-blue-950 dark:border-white">Mehr Erfahren</a>
     </div>
   </div>
 </div>
-   <h4
-class="flex justify-center self-center pt-10 font-sans text-4xl font-bold"
->
-Meine Erfahrung
-</h4>
-          
+ <!-- Figma CompanyCompass -->
+ <div class="flex flex-col items-center md:flex-row md:justify-center">
+  <div class="bg-slate-50 dark:bg-blue-950 rounded-3xl m-4 max-w-lg shadow-md-xl md:flex md:max-w-7xl">
+    <img
+      class="p-4 rounded-lg md:w-1/3" 
+      src="../images/CompanyCompass_Landingpage.png"
+      alt="Two4Four Landingpage"
+    />
+    <div class="p-4 sm:flex sm:flex-col sm:justify-center sm:w-2/3 sm:text-left text-center">
+      <h3 class="text-2xl font-bold text-black dark:text-blue-400">Projekt 3</h3>
+      <h2 class="text-1xl font-bold pb-2 pt-2">CompanyCompass</h2>
+      <p class="text-black dark:text-white text-left">
+        Im Modul Business Case Studies entwickelten wir über ein Semester hinweg einen MVP-Prototyp mit Figma. Unsere Aufgabe war es, ein Standort-Analyse-Tool zu gestalten, das Unternehmen bei der Suche nach optimalen Standorten unterstützt. Dies war eine spannende Herausforderung, die unsere Teamarbeit und unser Produktdesign förderte.
+      </p>
+      <a href="/richtig_frontend/public/projects.html" class="mt-4 w-32 h-10 md:w-48 flex justify-center items-center bg-white border rounded-xl hover:bg-gray-100 dark:hover:bg-blue-500 border-black text-xs dark:bg-blue-950 dark:border-white">Mehr Erfahren</a>
+    </div>
+  </div>
+</div>
+ <!-- Finanzapp -->
+ <div class="flex flex-col items-center md:flex-row md:justify-center">
+  <div class="bg-slate-50 dark:bg-blue-950 rounded-3xl m-4 max-w-lg shadow-md md:flex md:max-w-7xl">
+    <img
+      class="p-4 rounded-lg md:w-1/3" 
+      src="../images/Finaznapp_Landingpage.png"
+      alt="Two4Four Landingpage"
+    />
+    <div class="p-4 sm:flex sm:flex-col sm:justify-center sm:w-2/3 sm:text-left text-center">
+      <h3 class="text-2xl font-bold text-black dark:text-blue-400">Projekt 4</h3>
+      <h2 class="text-1xl font-bold pb-2 pt-2">Finanz-App</h2>
+      <p class="text-black dark:text-white text-left">
+        Im 2. Semester hatte ich meine erste Erfahrung mit Figma. Unser Ziel war es, eine benutzerfreundliche Finanz-App zu entwickeln, mit der Nutzer ihre Finanzen übersichtlich und intuitiv verwalten können. Diese Arbeit hat meinen Einstieg in das UX/UI-Design massgeblich geprägt.
+      </p>
+      <a href="/richtig_frontend/public/projects.html" class="mt-4 w-32 h-10 md:w-48 flex justify-center items-center bg-white border rounded-xl hover:bg-gray-100 dark:hover:bg-blue-500 border-black text-xs dark:bg-blue-950 dark:border-white">Mehr Erfahren</a>
+    </div>
+  </div>
+</div>
+ <!-- Figma Biodiversitätstage Bern -->
+ <div class="flex flex-col items-center md:flex-row md:justify-center">
+  <div class="bg-slate-50 dark:bg-blue-950 rounded-3xl m-4 max-w-lg shadow-md md:flex md:max-w-7xl">
+    <img
+      class="p-4 rounded-lg md:w-1/3" 
+      src="../images/BiodiversitätstageBern_Landingpage.png"
+      alt="Two4Four Landingpage"
+    />
+    <div class="p-4 sm:flex sm:flex-col sm:justify-center sm:w-2/3 sm:text-left text-center">
+      <h3 class="text-2xl font-bold text-black dark:text-blue-400">Projekt 5</h3>
+      <h2 class="text-1xl font-bold pb-2 pt-2">Biodiversitätstage Bern</h2>
+      <p class="text-black dark:text-white text-left">
+        Im Modul Hands-On User Interface Design entwickelten wir einen Figma-Prototypen für ein fiktives Szenario: die Biodiversitätstage in Bern. Der Fokus lag auf dem gesamten Gestaltungsprozess – von der Erstellung eines Webdesigns bis hin zur Entwicklung eines Logos und einer Markenidentität. Dieses Projekt half mir, die Grundlagen des Branding und Webdesigns zu vertiefen.
+      </p>
+      <a href="/richtig_frontend/public/projects.html" class="mt-4 w-32 h-10 md:w-48 flex justify-center items-center bg-white border rounded-xl hover:bg-gray-100 dark:hover:bg-blue-500 border-black text-xs dark:bg-blue-950 dark:border-white">Mehr Erfahren</a>
+    </div>
+  </div>
+</div>
+ 
+</div>
 
-        <div class="flex flex-col items-center md:flex-row md:justify-center">
-          <div class="dark:bg-blue-950 m-4 rounded-3xl max-w-lg shadow-md hover:shadow-xl">
-            <img
-              class="p-6"
-              src="../images/Landingpage_Two4Four.png"
-              alt="Two4Four Landingpage"
-            />
-            <div class="p-6">
-              <h3 class="text-black text-2xl font-bold dark:text-blue-400">Projekt 1</h3>
-              <h2 class="text-black dark:text-white text-2xl font-bold" class="pb-2 pt-2">Two4Four</h2>
-              <p class="text-black dark:text-white">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
-                excepturi quasi repellat amet pariatur!
-              </p>
-            </div>
-          </div>
 
-          <div class="dark:bg-blue-950 m-4 rounded-3xl max-w-lg shadow-md hover:shadow-xl">
-            <img
-              class="p-6"
-              src="../images/Landingpage_Two4Four.png"
-              alt="Two4Four Landingpage"
-            />
-            <div class="p-6 ">
-              <h3 class="text-black text-2xl font-bold dark:text-blue-400">Projekt 1</h3>
-              <h2 class="dark:text-white text-2xl font-bold" class="pb-2 pt-2">Two4Four</h2>
-              <p class="dark:text-white text-black">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
-                excepturi quasi repellat amet pariatur!
-              </p>
+
+ <!-- Meine Erfahrung -->
+  <div class="px-8">
+ <h1
+  class="mt-8 text-center font-serif text-4xl font-bold before:left-0 before:top-0 before:h-2 before:w-32 before:rounded before:bg-stone-600 dark:before:bg-stone-300 md:text-5xl md:before:left-0 md:before:w-40"
+  >
+  Meine Erfahrung
+  </h1>
+  <hr class="mx-auto mb-2 mt-6 w-auto border-gray-400" />
+</div>
+
+       
+      <section class="p-8">
+        <div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
+          <!-- Angular -->
+          <a
+            href="https://angular.io/"
+            target="_blank"
+            class="flex items-center space-x-4 rounded-lg bg-slate-50 p-4 shadow-md  dark:bg-blue-950 hover:bg-gray-100 dark:hover:bg-blue-500"
+          >
+            <div class="flex items-center space-x-1">
+              <span class="text-lg font-semibold">4/5</span>
+              <svg
+                class="h-6 w-6 text-yellow-500"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.97a1 1 0 00.95.69h4.18c.969 0 1.371 1.24.588 1.81l-3.392 2.46a1 1 0 00-.364 1.118l1.286 3.97c.3.921-.755 1.688-1.54 1.118l-3.392-2.46a1 1 0 00-1.175 0l-3.392 2.46c-.784.57-1.838-.197-1.54-1.118l1.286-3.97a1 1 0 00-.364-1.118L2.343 9.397c-.783-.57-.38-1.81.588-1.81h4.18a1 1 0 00.95-.69l1.286-3.97z"
+                />
+              </svg>
             </div>
-          </div>
+            <img
+              src="https://angular.io/assets/images/logos/angular/angular.svg"
+              alt="Angular"
+              class="h-12 w-12"
+            />
+            <span class="text-lg font-semibold">Angular</span>
+          </a>
+          <!-- TypeScript -->
+          <a
+            href="https://www.typescriptlang.org/"
+            target="_blank"
+            class="flex items-center space-x-4 rounded-lg bg-slate-50 p-4 shadow-md dark:bg-blue-950 hover:bg-gray-100 dark:hover:bg-blue-500"
+          >
+            <div class="flex items-center space-x-1">
+              <span class="text-lg font-semibold">2/5</span>
+              <svg
+                class="h-6 w-6 text-yellow-500"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.97a1 1 0 00.95.69h4.18c.969 0 1.371 1.24.588 1.81l-3.392 2.46a1 1 0 00-.364 1.118l1.286 3.97c.3.921-.755 1.688-1.54 1.118l-3.392-2.46a1 1 0 00-1.175 0l-3.392 2.46c-.784.57-1.838-.197-1.54-1.118l1.286-3.97a1 1 0 00-.364-1.118L2.343 9.397c-.783-.57-.38-1.81.588-1.81h4.18a1 1 0 00.95-.69l1.286-3.97z"
+                />
+              </svg>
+            </div>
+            <img
+              src="https://www.typescriptlang.org/icons/icon-48x48.png"
+              alt="TypeScript"
+              class="h-12 w-12"
+            />
+            <span class="text-lg font-semibold">TypeScript</span>
+          </a>
+          <!-- JavaScript -->
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+            target="_blank"
+            class="flex items-center space-x-4 rounded-lg bg-slate-50 p-4 shadow-md dark:bg-blue-950 hover:bg-gray-100 dark:hover:bg-blue-500"
+          >
+            <div class="flex items-center space-x-1">
+              <span class="text-lg font-semibold">3/5</span>
+              <svg
+                class="h-6 w-6 text-yellow-500"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.97a1 1 0 00.95.69h4.18c.969 0 1.371 1.24.588 1.81l-3.392 2.46a1 1 0 00-.364 1.118l1.286 3.97c.3.921-.755 1.688-1.54 1.118l-3.392-2.46a1 1 0 00-1.175 0l-3.392 2.46c-.784.57-1.838-.197-1.54-1.118l1.286-3.97a1 1 0 00-.364-1.118L2.343 9.397c-.783-.57-.38-1.81.588-1.81h4.18a1 1 0 00.95-.69l1.286-3.97z"
+                />
+              </svg>
+            </div>
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png"
+              alt="JavaScript"
+              class="h-12 w-12"
+            />
+            <span class="text-lg font-semibold">JavaScript</span>
+          </a>
+          <!-- HTML/CSS -->
+          <a
+            href="https://www.w3schools.com/html/html_css.asp"
+            target="_blank"
+            class="flex items-center space-x-4 rounded-lg bg-slate-50 p-4 shadow-md dark:bg-blue-950 hover:bg-gray-100 dark:hover:bg-blue-500"
+          >
+            <div class="flex items-center space-x-1">
+              <span class="text-lg font-semibold">5/5</span>
+              <svg
+                class="h-6 w-6 text-yellow-500"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.97a1 1 0 00.95.69h4.18c.969 0 1.371 1.24.588 1.81l-3.392 2.46a1 1 0 00-.364 1.118l1.286 3.97c.3.921-.755 1.688-1.54 1.118l-3.392-2.46a1 1 0 00-1.175 0l-3.392 2.46c-.784.57-1.838-.197-1.54-1.118l1.286-3.97a1 1 0 00-.364-1.118L2.343 9.397c-.783-.57-.38-1.81.588-1.81h4.18a1 1 0 00.95-.69l1.286-3.97z"
+                />
+              </svg>
+            </div>
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg"
+              alt="HTML/CSS"
+              class="h-12 w-12"
+            />
+            <span class="text-lg font-semibold">HTML/CSS</span>
+          </a>
+          <!-- Python -->
+          <a
+            href="https://www.python.org/"
+            target="_blank"
+            class="flex items-center space-x-4 rounded-lg bg-slate-50 p-4 shadow-md dark:bg-blue-950 hover:bg-gray-100 dark:hover:bg-blue-500"
+          >
+            <div class="flex items-center space-x-1">
+              <span class="text-lg font-semibold">3/5</span>
+              <svg
+                class="h-6 w-6 text-yellow-500"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.97a1 1 0 00.95.69h4.18c.969 0 1.371 1.24.588 1.81l-3.392 2.46a1 1 0 00-.364 1.118l1.286 3.97c.3.921-.755 1.688-1.54 1.118l-3.392-2.46a1 1 0 00-1.175 0l-3.392 2.46c-.784.57-1.838-.197-1.54-1.118l1.286-3.97a1 1 0 00-.364-1.118L2.343 9.397c-.783-.57-.38-1.81.588-1.81h4.18a1 1 0 00.95-.69l1.286-3.97z"
+                />
+              </svg>
+            </div>
+            <img
+              src="https://www.python.org/static/community_logos/python-logo.png"
+              alt="Python"
+              class="h-12 w-12"
+            />
+            <span class="text-lg font-semibold">Python</span>
+          </a>
+          <!-- SQL -->
+          <a
+            href="https://www.w3schools.com/sql/"
+            target="_blank"
+            class="flex items-center space-x-4 rounded-lg bg-slate-50 p-4 shadow-md dark:bg-blue-950 hover:bg-gray-100 dark:hover:bg-blue-500"
+          >
+            <div class="flex items-center space-x-1">
+              <span class="text-lg font-semibold">2/5</span>
+              <svg
+                class="h-6 w-6 text-yellow-500"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.97a1 1 0 00.95.69h4.18c.969 0 1.371 1.24.588 1.81l-3.392 2.46a1 1 0 00-.364 1.118l1.286 3.97c.3.921-.755 1.688-1.54 1.118l-3.392-2.46a1 1 0 00-1.175 0l-3.392 2.46c-.784.57-1.838-.197-1.54-1.118l1.286-3.97a1 1 0 00-.364-1.118L2.343 9.397c-.783-.57-.38-1.81.588-1.81h4.18a1 1 0 00.95-.69l1.286-3.97z"
+                />
+              </svg>
+            </div>
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/8/87/Sql_data_base_with_logo.png"
+              alt="SQL"
+              class="h-12 w-12"
+            />
+            <span class="text-lg font-semibold">SQL</span>
+          </a>
+          <!-- Node.js -->
+          <a
+            href="https://nodejs.org/"
+            target="_blank"
+            class="flex items-center space-x-4 rounded-lg bg-slate-50 p-4 shadow-md dark:bg-blue-950 hover:bg-gray-100 dark:hover:bg-blue-500"
+          >
+            <div class="flex items-center space-x-1">
+              <span class="text-lg font-semibold">2/5</span>
+              <svg
+                class="h-6 w-6 text-yellow-500"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.97a1 1 0 00.95.69h4.18c.969 0 1.371 1.24.588 1.81l-3.392 2.46a1 1 0 00-.364 1.118l1.286 3.97c.3.921-.755 1.688-1.54 1.118l-3.392-2.46a1 1 0 00-1.175 0l-3.392 2.46c-.784.57-1.838-.197-1.54-1.118l1.286-3.97a1 1 0 00-.364-1.118L2.343 9.397c-.783-.57-.38-1.81.588-1.81h4.18a1 1 0 00.95-.69l1.286-3.97z"
+                />
+              </svg>
+            </div>
+            <img
+              src="https://nodejs.org/static/images/logo.svg"
+              alt="Node.js"
+              class="h-12 w-12"
+            />
+            <span class="text-lg font-semibold">Node.js</span>
+          </a>
+          <!-- Strapi -->
+          <a
+            href="https://strapi.io/"
+            target="_blank"
+            class="flex items-center space-x-4 rounded-lg bg-slate-50 p-4 shadow-md dark:bg-blue-950 hover:bg-gray-100 dark:hover:bg-blue-500"
+          >
+            <div class="flex items-center space-x-1">
+              <span class="text-lg font-semibold">4/5</span>
+              <svg
+                class="h-6 w-6 text-yellow-500"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.97a1 1 0 00.95.69h4.18c.969 0 1.371 1.24.588 1.81l-3.392 2.46a1 1 0 00-.364 1.118l1.286 3.97c.3.921-.755 1.688-1.54 1.118l-3.392-2.46a1 1 0 00-1.175 0l-3.392 2.46c-.784.57-1.838-.197-1.54-1.118l1.286-3.97a1 1 0 00-.364-1.118L2.343 9.397c-.783-.57-.38-1.81.588-1.81h4.18a1 1 0 00.95-.69l1.286-3.97z"
+                />
+              </svg>
+            </div>
+            <img
+              src="https://strapi.io/assets/strapi-logo-light.svg"
+              alt="Strapi"
+              class="h-12 w-12"
+            />
+            <span class="text-lg font-semibold">Strapi</span>
+          </a>
+        </div>
       </section>
-      <section>
       
 
 
 
 
 
-      </section>
     </main>
 
     <footer-component></footer-component>
