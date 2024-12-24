@@ -8,24 +8,88 @@
     <link rel="stylesheet" href="./src/custom.css" />
     <title>contact</title>
   </head>
-  <body>
+  <body class="bg-white text-black dark:text-white">
     <div id="navbar-container"></div>
-    <header class="custom-bg-color border-b- p-8">
-      <!-- Titel  -->
+    <header class="custom-bg-color custom-bg-color dark:bg-black  p-8">
+      
       <h1
         class="text-center font-serif text-4xl font-bold before:left-0 before:top-0 before:h-2 before:w-32 before:rounded before:bg-stone-600 md:text-5xl md:before:left-0 md:before:w-40 dark:before:bg-stone-300"
       >
         Kontakt
       </h1>
       <hr class="mx-auto mb-4 mt-4 w-auto border-gray-400 md:mb-2 md:mt-6" />
+      <button id="theme-toggle" class="fixed bottom-2 right-1 mt-4 p-2 bg-slate-50 dark:bg-gray-900 rounded-xl border-black border-2 dark:border-white">Dark 🌙</button>
+
     </header>
-    <main class="custom-bg-color">
-     
+  
+      <main class="custom-bg-color min-h-screen text-black dark:bg-black dark:text-white flex items-center justify-center">
+       
+        <div class="w-full max-w-md p-8 space-y-6 bg-white dark:bg-gray-800 rounded-lg shadow-md">
+          <p class="mb-8 mt-0 text-black dark:text-white text-center">
+            Hast du lust uns zu Vernetzen? Schreib mir eine Nachricht!
+          </p>
+          <div class="flex justify-center space-x-4 mb-6">
+            <!-- GitHub -->
+            <a href="https://github.com/gomec1" target="_blank" class="text-black dark:text-white hover:text-gray-700 dark:hover:text-gray-300">
+              <svg class="h-8 w-8" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 0c-6.63 0-12 5.37-12 12 0 5.3 3.44 9.8 8.21 11.39.6.11.82-.26.82-.58 0-.29-.01-1.04-.02-2.05-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.35-1.76-1.35-1.76-1.1-.75.08-.74.08-.74 1.21.09 1.85 1.24 1.85 1.24 1.08 1.85 2.83 1.32 3.52 1.01.11-.78.42-1.32.76-1.62-2.67-.3-5.47-1.34-5.47-5.95 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.17 0 0 1.01-.32 3.3 1.23.96-.27 1.98-.4 3-.4s2.04.13 3 .4c2.29-1.55 3.3-1.23 3.3-1.23.66 1.65.24 2.87.12 3.17.77.84 1.24 1.91 1.24 3.22 0 4.62-2.8 5.65-5.47 5.95.43.37.81 1.1.81 2.22 0 1.6-.01 2.88-.01 3.27 0 .32.22.69.82.58 4.77-1.59 8.21-6.09 8.21-11.39 0-6.63-5.37-12-12-12z"/>
+              </svg>
+            </a>
+            <!-- LinkedIn -->
+            <a href="https://www.linkedin.com/in/carlos-a-gomez-p/" target="_blank" class="text-black dark:text-white hover:text-gray-700 dark:hover:text-gray-300">
+              <svg class="h-8 w-8" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.25c-.97 0-1.75-.78-1.75-1.75s.78-1.75 1.75-1.75 1.75.78 1.75 1.75-.78 1.75-1.75 1.75zm13.5 11.25h-3v-5.5c0-1.38-.56-2.5-2-2.5s-2 1.12-2 2.5v5.5h-3v-10h3v1.5c.44-.66 1.56-1.5 3-1.5 2.21 0 4 1.79 4 4v6z"/>
+              </svg>
+            </a>
+            <!-- Email -->
+            <a href="mailto:carlos@gomezpereanez.com" class="text-black dark:text-white hover:text-gray-700 dark:hover:text-gray-300">
+              <svg class="h-8 w-8" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 12.713l11.985-7.713c-.011-.004-.021-.01-.032-.014-.011-.004-.021-.01-.032-.014l-11.921 7.676-11.921-7.676c-.011.004-.021.01-.032.014-.011.004-.021.01-.032.014l11.985 7.713zm0 1.287l-12-7.75v13.75h24v-13.75l-12 7.75z"/>
+              </svg>
+            </a>
+          </div>
+
+
+
+        <div class="w-full max-w-md p-8 space-y-6 bg-white dark:bg-gray-800 rounded-lg shadow-md">
+          <h2 class="text-2xl font-bold text-center">Kontaktformular</h2>
+          <form action="#" method="POST" class="space-y-4">
+            <div>
+              <label for="first-name" class="block text-sm font-medium text-gray-700 dark:text-gray-300">Vorname</label>
+              <input type="text" id="first-name" name="first-name" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white" required>
+            </div>
+            <div>
+              <label for="last-name" class="block text-sm font-medium text-gray-700 dark:text-gray-300">Nachname</label>
+              <input type="text" id="last-name" name="last-name" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white" required>
+            </div>
+            <div>
+              <label for="email" class="block text-sm font-medium text-gray-700 dark:text-gray-300">E-Mail-Adresse</label>
+              <input type="email" id="email" name="email" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white" required>
+            </div>
+            <div>
+              <label for="message" class="block text-sm font-medium text-gray-700 dark:text-gray-300">Nachricht</label>
+              <textarea id="message" name="message" rows="4" maxlength="500" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white resize-none" required></textarea>
+              <p id="char-count" class="text-sm text-gray-500 dark:text-gray-400">0 / 500 Zeichen</p>
+            </div>
+            <script>
+              const messageInput = document.getElementById('message');
+              const charCount = document.getElementById('char-count');
+
+              messageInput.addEventListener('input', () => {
+              charCount.textContent = `${messageInput.value.length} / 500 Zeichen`;
+              });
+            </script>
+            <div>
+              <button type="submit" class="w-full px-4 py-2 font-medium text-white bg-indigo-600 rounded-md shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Absenden</button>
+            </div>
+          </form>
+        </div>
 
      
-      </div>
+      
     </main>
     <footer-component></footer-component>
+    <script src="./scripts/darkmodus.js"></script> 
     <script src="./scripts/script.js"></script>
     <script src="./scripts/loadnavbar.js"></script>
     <script src="./scripts/loadfooter.js"></script>
